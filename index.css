@@ -8,8 +8,14 @@
    
 }
 body{
-    background: rgb(25, 25, 25);
     scroll-behavior: smooth;
+    background-color: rgb(26, 28, 28);
+}
+
+.body1{
+    background:  rgb(26, 28, 28);
+    
+    height: 100vh;
 }
 ul{
     list-style: none;
@@ -21,6 +27,13 @@ ul{
     animation: list 2.9s ease-out forwards;
     position: relative;
 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(42, 216, 255);
 }
 @keyframes list {
     0%{
@@ -95,6 +108,9 @@ h1{
     }
     
 }
+.button{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px -7px;
+}
 .first2{
     margin-top: 14pt;
     width: 53%;
@@ -103,6 +119,43 @@ h1{
     color: white;
     animation: first22 2.8s;
 }
+h2{
+    color:  rgb(255, 255, 255);
+   margin-left: 34%;
+   margin-top: 1%;
+   margin-bottom: 1%;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    -webkit-text-stroke-color: rgb(42, 216, 255);
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 3px 10px 4px  rgba(0, 0, 0, 0.35);
+    
+    
+}
+button{
+    padding: 15px 25px;
+    font-size: 1.3em;
+    font-weight:  600;
+   
+   margin-top: 4%;
+   margin-left: 41%;
+    color: #fff9f9;
+    background-color: #3a3737;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-20px);
+    color: rgb(42, 216, 255);
+   box-shadow: 0px 16px 16px black;
+
+}
+
+
 @keyframes first22 {
     0%{
         opacity: 0;
@@ -111,6 +164,65 @@ h1{
         opacity: 0.99;
     }
     
+}
+.card{
+    background-color: #252121;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s ease;
+}
+.heart{
+    position:absolute ;
+    top: 6%;
+    width: 10%;
+    fill: rgb(255, 255, 255);
+    height:7%;
+    left: 88%;
+    
+       
+    
+}
+
+
+
+
+.card h3{
+    left: 3%;
+    position: absolute;
+    top: 72%;
+    
+    
+}
+.card p{
+   position: absolute;
+   top: 85%;
+   left: 3%;
+}
+.card img{
+    
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+
+.card:hover{
+    scale: 104%;
+}
+.cardlet{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    transition: 0.2s;
+}
+.cardlet:hover{
+    opacity: 1;
 }
 
 .black{
@@ -151,12 +263,14 @@ h1{
     background-color: rgb(42, 216, 255);
     margin-right: 10pt;
     color: #000;
+    transition: all 0.2s;
     
 }
 
 .project{
     margin-left: 15px;
     border: 1px solid black;
+    transition: all 0.2s;
 }
 .project:hover{ 
    
@@ -175,7 +289,7 @@ h1{
     margin-left: 70px;
     width: 45%;
     fill: transparent;
-    animation: logoc 0.5  forwards 6s;
+    animation: logoc 0.5s  forwards 1.9s;
    
 }
 @keyframes logoc {
@@ -285,4 +399,62 @@ h1{
         stroke-dashoffset: 0;
     }
     
+}
+
+.sec2{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    background-color: rgb(26, 28, 28);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 25px;
+}
+footer{
+    height: 300px;
+    text-align: center;
+    background-color: #252121;
+}
+footer p{
+  margin-top: 100px;
+  font-size: 40px;
+  color: white;
+}
+
+.sqare{
+    width: 40px;
+    height: 40px;
+    background-color: #533d3d;
+    position: relative;
+}
+.one{
+    left: 200px;
+    z-index: 1;
+    top: -55px;
+    transition: all 0.5s;
+}
+.two{
+    left:90px;
+    z-index: 2;
+    top: -90px;
+    transition: all 0.5s;
+}
+
+.three{
+    left: 400px;
+    top: -120px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+
+.one1:hover{
+  transform: translate(30px,-40px);
+}
+.two1:hover{
+   transform: translate(-30px ,-40px);
+}
+.three1:hover{
+    transform: translateY(40px);
 }
