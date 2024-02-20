@@ -413,6 +413,7 @@ button:hover{
 }
 footer{
     height: 300px;
+    padding: 5%;
     text-align: center;
     background-color: #252121;
 }
@@ -425,36 +426,99 @@ footer p{
 .sqare{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     background-color: #533d3d;
     position: relative;
+    transition: all 0.2s;
+}
+.animate{
+    height: 60%;
+    width: 100%;
+   
+    
 }
 .one{
-    left: 200px;
-    z-index: 1;
-    top: -55px;
+    
+   scale: 160%;
     transition: all 0.5s;
+    transform: translate(70px,-50px);
 }
 .two{
-    left:90px;
-    z-index: 2;
-    top: -90px;
+    
     transition: all 0.5s;
+    transform: translate(-130px ,-70px);
+    
 }
 
 .three{
-    left: 400px;
-    top: -120px;
-    z-index: 1;
+    scale: 150%;
+    transform: translateY(100px);
     transition: all 0.5s;
 }
+.buttn{
+    border: none;
+}
+.animate img{
+    width: 100%;
+   border-radius: inherit;
+    height: 100%;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #533d3d;
+    position: relative;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+} 
 
 
-.one1:hover{
-  transform: translate(30px,-40px);
+.cione{
+   scale: 160%;
+    transition: all 0.5s;
+    transform: translate(70px,50px);
 }
-.two1:hover{
-   transform: translate(-30px ,-40px);
+.citwo{
+    scale: 120%;
+    transition: all 0.5s;
+    transform: translate(-70px ,80px);
 }
-.three1:hover{
-    transform: translateY(40px);
+.cithree{
+    scale: 120%;
+    transform: translateY(-130px);
+    transition: all 0.5s;
+}
+#ci1{
+    left: 700px;
+    z-index: -1;
+    top: -165px;
+}
+#ci2{
+    left:550px;
+    z-index: -1;
+    top: -200px;
+}
+#ci3{
+    left: 630px;
+    top: -250px;
+    z-index: -1; 
+}
+#su1{
+    left: 700px;
+    z-index: -1;
+    top: -55px;
+}
+
+#su2{
+    left:550px;
+    z-index: -1;
+    top: -90px;
+}
+#su3{
+    left: 630px;
+    top: -130px;
+    z-index: -1;
+}
+.animate{
+    padding: 100px;
 }

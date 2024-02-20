@@ -143,10 +143,19 @@
 
        
     </div>
-    <button class="buttn" id="butttt">Show more...</button>
-    <!-- <div class="sqare one"></div>
-    <div class="sqare two"></div>
-    <div class="sqare three"></div> -->
+    <div class="animate">
+        <button class="buttn" id="butttt">Show more...</button>
+        <div class="sqare "  id="su1"><img src="https://i.pinimg.com/236x/49/e0/24/49e024a30e4633ed1fe0c7fbe699405a.jpg" alt=""></div>
+        <div class="sqare " id="su2"><img src="https://i.pinimg.com/236x/40/cf/8f/40cf8ff8cf5d692f31439a71d6d69912.jpg" alt=""></div>
+        <div class="sqare" id="su3"><img src="https://i.pinimg.com/236x/f7/33/67/f73367a146cb79cb383b34dbf91f1128.jpg" alt=""></div>
+
+        <div class="circle"  id="ci1"><img src="https://i.pinimg.com/236x/6e/d1/21/6ed1212f94ec47298d0830226739155b.jpg" alt=""></div>
+        <div class="circle"  id="ci2"><img src="https://i.pinimg.com/236x/74/d9/50/74d950d990490ee38090271ca86e40b4.jpg" alt=""></div>
+        <div class="circle" id="ci3"><img src="https://i.pinimg.com/236x/c4/f1/65/c4f1653b8e250a7dbb34d2f274aa3669.jpg" alt=""></div>
+
+
+    </div>
+   
 
 
     <footer>
@@ -163,19 +172,31 @@
         
         console.log(`legth = ${logo[i].getTotalLength()}`);
     }
-
-
-    var one = document.querySelector('one1');
-    var two = document.querySelector('two');
-    var three= document.querySelector('three1');
-    
-   
-
-   var butten = document.getElementsByTagName("button")
-
+    let one = document.querySelector('#su1');
+    var two = document.querySelector('#su2');
+    var three= document.querySelector('#su3');
+    var ci1= document.querySelector('#ci1');
+    var ci2= document.querySelector('#ci2');
+    var ci3= document.querySelector('#ci3');
     const buutu = document.getElementById("butttt");
     buutu.addEventListener("mouseover",() =>{
-       two.classList.add("one1")
+       one.classList.add("one");
+       two.classList.add('two');
+       three.classList.add("three");
+       ci1.classList.add("cione");
+       ci2.classList.add("citwo");
+       ci3.classList.add("cithree")
+
+
+    })
+    buutu.addEventListener("mouseleave",()=>{
+        one.classList.remove("one");
+        two.classList.remove("two");
+        three.classList.remove('three');
+        ci1.classList.remove("cione");
+       ci2.classList.remove("citwo");
+       ci3.classList.remove("cithree");
+
     })
     
 </script>
